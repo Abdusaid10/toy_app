@@ -9,7 +9,6 @@ This is basic application from [railstutorial](https://www.railstutorial.org/boo
 
 ## Getting started
 
-### Clone
 
 ```
 git clone https://github.com/Abdusaid10/toy_app.git
