@@ -11,6 +11,8 @@
     </tr>
   </thead>
 
+  <%= link_to 'New Micropst', new_micropst_path, class: 'btn waves-effect waves-light' %>
+
   <tbody>
     <% @micropsts.each do |micropst| %>
       <tr>
@@ -18,7 +20,7 @@
         <td><%= micropst.user_id %></td>
         <td><%= link_to 'Show', micropst %></td>
         <td><%= link_to 'Edit', edit_micropst_path(micropst) %></td>
-        <td><%= link_to 'Destroy', micropst, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', micropst, class:'red-btn', method: :delete, data: { confirm: 'Are you sure?' }, style: "color: red" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +28,3 @@
 
 <br>
 
-<%= link_to 'New Micropst', new_micropst_path %>

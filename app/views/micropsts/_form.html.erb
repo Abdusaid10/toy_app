@@ -1,7 +1,9 @@
 <%= form_with(model: micropst, local: true) do |form| %>
   <% if micropst.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(micropst.errors.count, "error") %> prohibited this micropst from being saved:</h2>
+    <div id="error_explanation" class="card-panel red">
+      <strong>
+        <p><%= pluralize(micropst.errors.count, "error") %> prohibited this micropst from being saved:</p>
+      </strong>
 
       <ul>
       <% micropst.errors.full_messages.each do |message| %>
@@ -13,7 +15,7 @@
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, class: "materialize-textarea" %>
   </div>
 
   <div class="field">
@@ -21,7 +23,7 @@
     <%= form.number_field :user_id %>
   </div>
 
-  <div class="actions">
+  <div class="actions btn waves-effect waves-light">
     <%= form.submit %>
   </div>
 <% end %>
