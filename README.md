@@ -1,24 +1,34 @@
-# README
+# toy_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is basic application from [railstutorial](https://www.railstutorial.org/book/toy_app), Here we develop a toy demo application to show off some of the power of Rails. The purpose is to get a high-level overview of Ruby on Rails programming (and web development in general) by rapidly generating an application using scaffold generators, which create a large amount of functionality automatically.
 
-Things you may want to cover:
+## Prerequisite
 
-* Ruby version
+- Ruby 2.6.3
+- Rails 5.2.3
 
-* System dependencies
+## Run local
 
-* Configuration
+### Clone
 
-* Database creation
+```
+git clone https://github.com/Abdusaid10/toy_app.git
+cd toy_app
+```
 
-* Database initialization
+### Install
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run
 
-* Deployment instructions
+```
+rails server
+```
 
-* ...
+## Author
+
+- [@Abdusaid10](https://github.com/Abdusaid10)
+- [@imhta](https://github.com/imhta)
